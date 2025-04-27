@@ -24,7 +24,6 @@ class App extends Component {
       </div>
     );
   }
-
   renderTimers = () => this.state.timerIDs.map(id => {
     return <Timer key={id} id={id} removeTimer={this.removeTimer} />
   })
